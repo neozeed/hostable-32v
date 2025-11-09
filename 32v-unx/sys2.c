@@ -187,7 +187,7 @@ UNIX_seek()
         register struct file *fp;
         register struct a {
                 int     fdes;
-                off_t   off;
+                U_off_t   off;
                 int     sbase;
         } *uap;
 

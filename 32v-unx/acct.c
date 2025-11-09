@@ -55,7 +55,7 @@ UNIX_acct()
 {
         register i;
         register struct inode *ip;
-        off_t siz;
+        U_off_t siz;
 
         if ((ip=acctp)==NULL)
                 return;

@@ -31,7 +31,7 @@ int (*func)();
         struct buf *bp;
         int i;
         dev_t d;
-        off_t eo;
+        U_off_t eo;
 
         /*
          * If name starts with '/' start from

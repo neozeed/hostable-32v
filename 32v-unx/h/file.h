@@ -11,7 +11,7 @@ struct	file
 	char	f_count;	/* reference count */
 	struct inode *f_inode;	/* pointer to inode structure */
 	union {
-		off_t	f_offset;	/* read/write character pointer */
+		U_off_t	f_offset;	/* read/write character pointer */
 		struct chan *f_chan;	/* mpx channel pointer */
 	} f_un;
 };

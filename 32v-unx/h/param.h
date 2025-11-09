@@ -142,7 +142,7 @@ typedef	unsigned short		ino_t;
 typedef	int		time_t;
 typedef	int		label_t[10];
 typedef	short		dev_t;
-typedef	int		off_t;
+typedef	int		U_off_t;
 
 /*
  * Machine-dependent bits and macros

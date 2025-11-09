@@ -7,7 +7,7 @@ struct	stat
 	short   	st_uid;
 	short   	st_gid;
 	dev_t	st_rdev;
-	off_t	st_size;
+	U_off_t	st_size;
 	time_t	st_atime;
 	time_t	st_mtime;
 	time_t	st_ctime;

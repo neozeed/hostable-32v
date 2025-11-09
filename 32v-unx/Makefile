@@ -6,7 +6,11 @@ CC = cc
 #for NeXTSTEP
 CFLAGS = -g -I. -O0 -posix 
 #For most else
-CFLAGS = -I. -g
+CFLAGS = -I. -g \
+	-Wno-implicit-int \
+	-Wno-implicit-function-declaration \
+	-Wno-return-mismatch \
+	-Wno-int-conversion
 
 OBJECTS = acct.o      dsort.o     main.o      partab.o    sys.o       trap.o\
 alloc.o     dz.o        malloc.o    pipe.o      sys1.o      tty.o\
@@ -23,5 +27,5 @@ INCLUDES = -I.
 	$(CC) $(CFLAGS) $(INCLUDES) -o 32v $(OBJECTS) $(LIBS)
 
 
-clean::
+clean:
 	rm *.o 32v

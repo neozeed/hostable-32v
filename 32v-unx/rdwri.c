@@ -26,7 +26,7 @@ register struct inode *ip;
         struct buf *bp;
         dev_t dev;
         daddr_t lbn, bn;
-        off_t diff;
+        U_off_t diff;
         register on, n;
         register type;
         extern int mem_no;

@@ -74,8 +74,8 @@ int *UNIvec[BSIZE/NBPW] = {
 /* 0xc0 */
         (int *)UNIX_dzrint,     /* DZ-11 # 0 */
         (int *)UNIX_dzxint,
-        (int *)((int)UNIX_dzrint+DEV_1),        /*  DZ-11  # 1 */
-        (int *)((int)UNIX_dzxint+DEV_1),
+/*        (int *)((int)UNIX_dzrint+DEV_1),        /*  DZ-11  # 1 */
+/*        (int *)((int)UNIX_dzxint+DEV_1),
 /* 0xd0 */
         (int *)UNIX_ubastray, /* DR-11B, VAX-11/45 link */
         (int *)UNIX_ubastray,

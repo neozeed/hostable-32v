@@ -33,12 +33,12 @@ struct	user
 			int	r_val1;
 			int	r_val2;
 		};
-		off_t	r_off;
+		U_off_t	r_off;
 		time_t	r_time;
 	} u_r;
 	caddr_t	u_base;			/* base address for IO */
 	unsigned int u_count;		/* bytes remaining for IO */
-	off_t	u_offset;		/* offset in file for IO */
+	U_off_t	u_offset;		/* offset in file for IO */
 	struct inode *u_cdir;		/* pointer to inode of current directory */
 	struct inode *u_rdir;		/* root directory of current process */
 	char	u_dbuf[DIRSIZ];		/* current pathname component */

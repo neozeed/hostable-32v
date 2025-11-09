@@ -49,7 +49,7 @@ UNIX_stat()
         ip = UNIX_namei(UNIX_uchar, 0);
         if(ip == NULL)
                 return;
-        UNIX_stat1(ip, uap->sb, (off_t)0);
+        UNIX_stat1(ip, uap->sb, (U_off_t)0);
         UNIX_iput(ip);
 }
 
@@ -60,7 +60,7 @@ UNIX_stat()
 UNIX_stat1(ip, ub, pipeadj)
 register struct inode *ip;
 struct stat *ub;
-off_t pipeadj;
+U_off_t pipeadj;
 {
         register struct dinode *dp;
         register struct buf *bp;
