@@ -1,0 +1,10 @@
+The biggest thing is a block driver. I've started this with ansidisk.c but I'm starting to figure out
+how the strategy thing works.....  unix.fs is a small filesystem generated with v6_on_286.zip (sorta)
+
+The console driver sucks big time, but it can display output
+There is no clock!
+The port still has way too much VAX stuff (look @ conf.c)
+The goal is to have device drivers that work under the guest
+OS's native clib.  Eventually it would be cool to try to
+host this under oslib or oskit, so that we can have
+a native 32v.
